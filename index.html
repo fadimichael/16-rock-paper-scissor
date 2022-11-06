@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper and Scissor</title>
+  <link rel="stylesheet" href="./assets/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<main>
+  <h1>Rock Paper and Scissor</h1>
+  <div class="wrapper">
+    <form action="">
+      <p>How many rounds?</p>
+      <div id="rounds-box">
+        <div>
+          <input type="radio" name="counts" id="radio5" class="radio-input" value="5" required>
+          <label for="radio5"> 5 </label> <br><br>
+          <input type="radio" name="counts" id="radio15" class="radio-input" value="15">
+          <label for="radio10">15</label>
+
+        </div>
+        <div>
+          <input type="radio" name="counts" id="radio10" class="radio-input" value="10">
+          <label for="radio15">10</label><br><br>
+          <input type="radio" name="counts" id="radio20" class="radio-input" value="20">
+          <label for="radio20">20</label>
+        </div>
+      </div>
+      <div id="counts-box">
+        <p id="count-value">0</p><span>/</span>
+        <p id="choosen-radio-value"></p>
+      </div>
+
+    </form>
+    <section class="result">
+      <h1><span id="user-score">0</span>:<span id="comp-score">0</span></h1>
+      <p id="user">USER</p>
+      <p id="comp">COMP</p>
+    </section>
+    <section>
+      <h2 id="result-text">let's Play</h2>
+      <h2 id="end-result"></h2>
+      <div id="rock-si-paper">
+        <button value="rock" class="rock"><i class="fa-regular fa-hand-back-fist"></i></button>
+        <button value="paper" class="paper"><i class="fa-regular fa-hand"></i></button>
+        <button value="scissor" class="scissor"><i class="fa-solid fa-scissors"></i></button>
+      </div>
+      <p id="game-over">MAKE YOUR MOVE</p>
+      <button id="restart-btn">restart</button>
+    </section>
+  </div>
+</main>
+
+<body>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
